@@ -10,6 +10,14 @@ body {
     text-align: center;
     justify-content: center;
 }
+main {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 2em;
+    width: 85vw;
+}
+
 h1 {
     font-weight: 900;
     text-transform: uppercase;
@@ -24,6 +32,9 @@ header {
     background-color: #063f72;
     color: #fff;
     margin-bottom: 2em;
+}
+li {
+    list-style-type: none;
 }
 button {
     align-self: center;
