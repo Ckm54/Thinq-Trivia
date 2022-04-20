@@ -74,7 +74,6 @@ button#fetch:disabled, button#fetch:disabled:hover {
     color: gray;
     cursor: auto;
 }
-
 dropdown {
     border-bottom: 2px solid #063f72;
     /* display: inline-flex; */
@@ -122,3 +121,22 @@ dropdown input:checked ~ ul {
     opacity: 1;
     visibility: visible;
 }
+#intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#query {
+    color: #063f72;
+    font-weight: 400;
+}
+#score {
+    border-top: 2px solid;
+    padding: 0;
+}
+.animate {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: all 0.25s;
+}
+
