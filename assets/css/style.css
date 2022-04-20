@@ -139,4 +139,13 @@ dropdown input:checked ~ ul {
     backface-visibility: hidden;
     transition: all 0.25s;
 }
-
+.correct {
+    background-color: #2eb872;
+    border: 2px solid #2eb872;
+    color: #fff;
+}
+.incorrect {
+    background-color: #fa4659;
+    border: 2px solid #fa4659;
+    color: #fff;
+}
