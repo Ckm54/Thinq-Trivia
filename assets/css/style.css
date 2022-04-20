@@ -41,3 +41,51 @@ button#fetch:disabled, button#fetch:disabled:hover {
     color: gray;
     cursor: auto;
 }
+
+dropdown {
+    border-bottom: 2px solid #063f72;
+    /* display: inline-flex; */
+    height: 2em;
+    font-size: 1.25em;
+    flex-direction: column;
+    margin: 0 0 0.5em 0;
+    width: 280px;
+}
+dropdown ul li {
+    padding: 0.5em 0;
+    background-color: #264a5c;
+}
+dropdown ul li:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+dropdown label {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 0.5em;
+    position: relative;
+    z-index: 2;
+}
+dropdown label:hover {
+    color: #264a5c;
+    cursor: pointer;
+}
+dropdown input {
+    display: none;
+}
+dropdown input ~ ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+}
+dropdown input:checked ~ ul {
+    opacity: 1;
+    visibility: visible;
+}
