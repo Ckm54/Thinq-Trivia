@@ -27,3 +27,17 @@ button {
     width: 100%;
     transition: all 0.25s ease;
 }
+button:disabled, button:disabled:hover {
+    cursor: auto;
+    pointer-events: none;
+}
+button#fetch {
+    background-color: #063f72;
+    color: #fff;
+}
+button#fetch:disabled, button#fetch:disabled:hover {
+    background-color: rgb(211, 211, 211);
+    border: 2px solid rgb(211, 211, 211);
+    color: gray;
+    cursor: auto;
+}
