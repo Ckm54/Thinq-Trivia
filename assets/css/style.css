@@ -10,6 +10,21 @@ body {
     text-align: center;
     justify-content: center;
 }
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    margin: 0;
+}
+h3 {
+    margin: 0.5em 0;
+}
+header {
+    background-color: #063f72;
+    color: #fff;
+    margin-bottom: 2em;
+}
 button {
     align-self: center;
     background-color: #fff;
