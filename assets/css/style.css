@@ -23,5 +23,7 @@ button {
     outline: none;
     padding: 0.5em;
     text-align: center;
-    
+    max-width: 280px;
+    width: 100%;
+    transition: all 0.25s ease;
 }
