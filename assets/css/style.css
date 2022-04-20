@@ -17,7 +17,9 @@ main {
     margin-top: 2em;
     width: 85vw;
 }
-
+section {
+    padding: 0 2em 2em 2em 2em;
+}
 h1 {
     font-weight: 900;
     text-transform: uppercase;
