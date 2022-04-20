@@ -126,7 +126,7 @@ dropdown input:checked ~ ul {
     display: flex;
     flex-direction: column;
 }
-#query {
+#question {
     color: #063f72;
     font-weight: 400;
 }
@@ -148,4 +148,7 @@ dropdown input:checked ~ ul {
     background-color: #fa4659;
     border: 2px solid #fa4659;
     color: #fff;
+}
+#board, #gameOver, #player2-score {
+    display: none;
 }
