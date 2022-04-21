@@ -1,49 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia-App</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Trivia-App</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-
-    <main>
-        <header>
-            <h1>ThinQ Trivia App</h1>
-            <section id="instructions">
-                <p>Start THinking Out Loud!!</p>
-            </section>
-        </header>
-        <section id="board">
-            <h2 id="question"></h2>
-            <ul id="results"></ul>
-            <button id="fetch">Next Question</button>
-            <section id="score">
-                <h3 id="player1-score">Player One: <span>0</span></h3>
-                <h3 id="player2-score">Player Two: <span>0</span></h3>
-                <h2 id="turn"></h2>
-                <h3 id="answer"></h3>
-            </section>
-        </section>
-        <section id="intro">
-            <dropdown>
-                <input type="checkbox" id="toggle">
-                <label for="toggle" class="animate">Choose Category <span class="material-icons">list</span> </label>
-                <ul id="categories">
-                    <li class="animate category">Random</li>
-                </ul>
-            </dropdown>
-            <button id="solo">Single Player Mode</button>
-            <button id="teams">Multi Player Mode</button>
-        </section>
-        <section id="gameOver">
-            <h2 id="winner"></h2>
-            <button id="new">New Game</button>
-        </section>
-    </main>
+<main>
+  <header>
+    <h1>ThinQ Trivia App</h1>
+    <section id="instructions">
+      <p>Start THinking Out Loud!!</p>
+    </section>
+    <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
     
-    <script src="./assets/js/main.js"></script>
+  </header>
+  <section id="board">
+    <h2 id="query"></h2>
+    <ul id="results"></ul>
+    <button id="fetch">Next Question</button>
+    <section id="score">
+      <h3 id="player1-score">Player One: <span>0</span></h3>
+      <h3 id="player2-score">Player Two: <span>0</span></h3>
+      <h2 id="turn"></h2>
+      <h3 id="answer"></h3>
+    </section>
+  </section>
+  <section id="intro">
+    <dropdown>
+      <input id="toggle" type="checkbox"/>
+      <label class="animtate" for="toggle">Choose Category <span class="material-icons">list</span> </label>
+      <ul id="category">
+        <li class="animate js-category">Random</li>
+      </ul>
+    </dropdown>
+    <button id="solo">Solo</button>
+    <button id="teams">Multiplayer</button>
+  </section>
+  <section id="gameOver">
+    <h2 id="winner"></h2>
+    <button id="new">New Game</button>
+  </section>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script  src="./assets/js/main.js"></script>
+
 </body>
 </html>
