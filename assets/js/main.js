@@ -138,6 +138,41 @@ let myApp = () => {
           }
         });
       };
+      let response = () => {
+        $('.choice').on('click', function () {
+          counter += 1;
+          let answer = $(this).text();
+          let $answer = $('#answer');
+          // Return correct answer
+          $('.choice').filter(function () {
+            return $(this).text() == correct;
+          }).addClass('correct');
+          $('.choice').prop("disabled", true);
+          $('#fetch').prop("disabled", false);
+          if (answer == correct && solo) {
+            player1Score += 1;
+            $answer.html('Correct!');
+            $('#player1-score span').html(player1Score);
+          } else if (turn % 2 !== 0 && answer == correct) {
+            player1Score += 1;
+            $answer.html('Correct!');
+            $('#player1-score span').html(player1Score);
+          } else if (turn % 2 === 0 && answer == correct) {
+            player2Score += 1;
+            $answer.html('Correct!');
+            $('#player2-score span').html(player2Score);
+          } else {
+            $(this).addClass('incorrect');
+            $answer.html('Incorrect');
+          }
+          if (solo !== true) {
+            turn += 1;
+          }
+          if (counter >= 10) {
+            gameOver();
+          }
+        });
+      };
 
 }
 
