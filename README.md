@@ -1,5 +1,6 @@
-# open-mind-trivia
+# ThinQ Trivia
 This project creates a Trivia style quiz game ehere you can test your know-how on a specific topic by answering some random questions related to the topic
+The Project utilizes the Open TRivia Db to fetch quiz data.
 
 #### By Collins_54
 
@@ -7,11 +8,11 @@ This project creates a Trivia style quiz game ehere you can test your know-how o
 
 A  screenshot of the application's landing page
 
-![Alt text](./assets/screenshots/pizza-home.png?raw=true "Home Screen")
+![Alt text](./assets/screenshots/thinq.png?raw=true "Home Screen")
 
 ## Table of Content
 
-+ [Pizz House](#pizz-house)
++ [ThinQ Trivia](#pizz-house)
 + [Description](#Description)
 + [Installation ](#Installation)
 + [Languages and Frameworks used](#Languages-used)
@@ -20,14 +21,14 @@ A  screenshot of the application's landing page
 + [Author's Info](#author-Info)
 
 ## Description
-This web application enables users be able to place their pizza orders online by choosing their preferred pizza type, toppings and crusts. For delivery option a customer has to input their location and contact details and afterwards gets an alert message that their delivery will soon be made
+Playing games online has always been a so fun practice for leisure but having gained some knowledge after a leisure time is the most beneficial thing. Think Quiz Trivia game helps achieve this by sharpening your knowledge as you try and answer more and more questions.
 
 You can preview the live working version here: 
-[Pizza-House](https://ckm54.github.io/pizz-house/)
+[ThinQ-Trivia](https://ckm54.github.io/Thinq-Trivia/)
 
-#### Order-Page
+#### Quiz-Page
 
-![Alt text](./assets/screenshots/pizza-order.png?raw=true "Order Page")
+![Alt text](./assets/screenshots/quizes.png?raw=true "Quizes Page Section")
 
 
 ## Installation
@@ -43,8 +44,8 @@ You can preview the live working version here:
 This is a summary of the expected behaviors given input and output to the application:
 | Behaviour                 |    Input                   |  Output                                                                                      |
 | -------------             | -------------              | --------                                                                                     |
-| Check Menu items details  | Hover on menu images       | Text description about each item fades in and user can read more about a specific item       |
-| add pizza                 | Click Add Pizza Button     | Pizza details and number of items on order displays on the order table.                      |
+| Choose Category to answer | Click choose category      | Choose a specific topic category to answer questions on      |
+| Solo player mode          | Click Solo Button          | Game Mode is set to allow only a single player                      |
 | Check Total               | Click Checkout Button      | A message with total amout displays                                                          | 
 | Request For Delivery      | Click Home Delivery Button | A form for user to enter location and contact displays.                                      |
 | Place Order               | Click Place Order Button   | A message with total amout displays and for home delivery name and amount inclusive displays |
