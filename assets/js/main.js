@@ -173,6 +173,11 @@ let myApp = () => {
           }
         });
       };
+      next();
+    $(document).ready(function () {
+        intro();
+        $('.sk-circle').fadeOut('fast');
+    });
 
 }
 
