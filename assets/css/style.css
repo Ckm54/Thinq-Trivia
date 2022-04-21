@@ -43,7 +43,7 @@ ul {
 li {
     list-style-type: none;
 }
-button {
+button, .choice {
     align-self: center;
     background-color: #fff;
     border: 2px solid #063f72;
@@ -60,9 +60,16 @@ button {
     width: 100%;
     transition: all 0.25s ease;
 }
-button:hover {
+button:hover, .choice:hover {
     background-color: #063f72;
     color: #fff;
+}
+#results {
+    display: flex;
+    width: 100%;
+}
+.choice {
+    border-radius: 5px;
 }
 button:disabled, button:disabled:hover {
     cursor: auto;

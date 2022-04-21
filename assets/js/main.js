@@ -83,7 +83,7 @@ let myApp = () => {
           }
           $.each(choices, function (i) {
             let choice = choices[i];
-            $('#results').append('<li><button class="choice">' + choice + '</button></li>');
+            $('#results').append('<li class="choice">' + choice + '</li>');
           });
           response();
         });
