@@ -109,6 +109,24 @@ let myApp = () => {
         getCategories();
         chooseTeams();
       };
+      let newGame = () => {
+        $('#new').on('click', function () {
+          counter = 0;
+          player1Score = 0;
+          player2Score = 0;
+          turn = 1;
+          $('#new').fadeOut('fast');
+          $('#board').hide();
+          $('#query').empty();
+          $('#results').empty();
+          $('#player1-score span').html(player1Score);
+          $('#player2-score span').html(player2Score);
+          $('#turn').empty();
+          $('#answer').empty();
+          $('#intro').fadeIn('fast');
+          $('#gameOver').hide();
+        });
+      };
 
 }
 
