@@ -45,6 +45,26 @@ let myApp = () => {
         }
         return arr;
       };
+      let chooseTeams = () => {
+        $('#solo').on('click', function () {
+          solo = true;
+          $('#intro').fadeOut('fast');
+          $('#player2-score').hide();
+          $('#turn').hide();
+          $('#instructions').fadeOut('fast');
+          fetch();
+          $('#board').fadeIn(2000);
+        });
+        $('#teams').on('click', function () {
+          $('#player2-score').show();
+          $('#turn').html('Player One Turn');
+          $('#intro').fadeOut('fast');
+          $('#instructions').fadeOut('fast');
+          fetch();
+          $('#board').fadeIn(2000);
+          solo = false;
+        });
+      };
 
 }
 
