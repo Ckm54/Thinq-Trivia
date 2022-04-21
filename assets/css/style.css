@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
-    background-color: #063f72;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
     /* color: #063f72; */
     display: flex;
     font-family: "Quicksand", sans-serif;
@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     margin-top: 2em;
-    width: 85vw;
+    width: 65vw;
 }
 section {
     padding: 0 2em 2em 2em 2em;
@@ -35,6 +35,16 @@ header {
     color: #fff;
     margin-bottom: 2em;
 }
+#instructions {
+    display: flex;
+}
+.instruction-text {
+    margin: 20px 0;
+    padding: 100px 50px ;
+}
+.instruction-img {
+    margin-right: 50px;
+}
 ul {
     display: flex;
     flex-flow: column;
@@ -48,7 +58,7 @@ button, .choice {
     background-color: #fff;
     border: 2px solid #063f72;
     font-size: 1.25em;
-    border-radius: 200px;
+    border-radius: 5px;
     color: #063f72;
     cursor: pointer;
     font-family: "Quicksand", sans-serif;
@@ -68,9 +78,9 @@ button:hover, .choice:hover {
     display: flex;
     width: 100%;
 }
-.choice {
+/* .choice {
     border-radius: 5px;
-}
+} */
 button:disabled, button:disabled:hover {
     cursor: auto;
     pointer-events: none;
