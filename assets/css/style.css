@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900");
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
 body {
     background-image: radial-gradient( circle 400px at 0.2% 1.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1));
@@ -24,6 +25,7 @@ section {
 h1 {
     font-weight: 900;
     text-transform: uppercase;
+    font-family: 'Walter Turncoat', cursive;
 }
 h2 {
     margin: 0;
@@ -150,6 +152,13 @@ dropdown input ~ ul {
 dropdown input:checked ~ ul {
     opacity: 1;
     visibility: visible;
+}
+#track {
+    color: #2E79BA;
+    margin-bottom: 5px;
+}
+#query {
+    padding: 0 20px;
 }
 #intro {
     align-items: center;
