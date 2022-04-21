@@ -88,6 +88,23 @@ let myApp = () => {
           response();
         });
       };
+      let gameOver = () => {
+        $('#new').fadeIn('fast');
+        $('#fetch').prop('disabled', true);
+        $('#gameOver').fadeIn('fast');
+        if (solo) {
+          $('#winner').html('You\'ve scored ' + player1Score + ' out of 10');
+        } else if (solo !== true) {
+          if (player2Score > player1Score) {
+            $('#winner').html('Player Two Wins!');
+          } else if (player2Score === player1Score) {
+            $('#winner').html('Draw!');
+          } else if (player2Score < player1Score) {
+            $('#winner').html('Player One Wins!');
+          }
+        }
+        newGame();
+      };
 
 }
 
