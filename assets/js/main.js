@@ -143,6 +143,7 @@ let triviaApp = () => {
         counter += 1;
         let answer = $(this).text();
         let $answer = $('#answer');
+        $('#track').html(counter + ' Out of 10')
         // Return correct answer
         $('.choice').filter(function () {
           return $(this).text() == correct;
