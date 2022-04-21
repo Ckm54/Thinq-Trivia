@@ -33,6 +33,18 @@ let myApp = () => {
           }
         });
       };
+      const shuffle = arr => {
+        let i = arr.length,
+        temp,rand;
+        while (0 !== i) {
+          rand = Math.floor(Math.random() * i);
+          i -= 1;
+          temp = arr[i];
+          arr[i] = arr[rand];
+          arr[rand] = temp;
+        }
+        return arr;
+      };
 
 }
 
