@@ -127,6 +127,17 @@ let myApp = () => {
           $('#gameOver').hide();
         });
       };
+      let next = () => {
+        $('#fetch').on('click', function () {
+          $('#answer').empty();
+          fetch();
+          if (solo !== true && turn % 2 === 0) {
+            $('#turn').html('Player Two Turn');
+          } else if (solo !== true && turn % 2 > 0) {
+            $('#turn').html('Player One Turn');
+          }
+        });
+      };
 
 }
 
