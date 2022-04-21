@@ -7,8 +7,10 @@ let myApp = () => {
     player1Score = 0,
     player2Score = 0;
     const apiCategory = 'https://opentdb.com/api_category.php';
-    const htmlEntities = str => String(str).replace(/&[#039]*;/g, "'").replace(/&[amp]*;/g, '&').replace(/&[quote]*;/g, '"');
-    const getCategories = () => {
+    function htmlEntities(str) {
+        String(str).replace(/&[#039]*;/g, "'").replace(/&[amp]*;/g, '&').replace(/&[quote]*;/g, '"');
+    }
+    function getCategories() {
         $.getJSON(apiCategory, function (data) {
         categories = data.trivia_categories;
         $.each(categories, function (i) {
@@ -17,7 +19,7 @@ let myApp = () => {
         closeCategories();
         });
     };
-    var closeCategories = () => {
+    function closeCategories() {
         $('li.js-category').on('click', function () {
           chosen = $(this).text();
           $('#toggle').prop('checked', false);
@@ -33,7 +35,7 @@ let myApp = () => {
           }
         });
       };
-      const shuffle = arr => {
+      function shuffle(arr) {
         let i = arr.length,
         temp,rand;
         while (0 !== i) {
@@ -45,7 +47,7 @@ let myApp = () => {
         }
         return arr;
       };
-      let chooseTeams = () => {
+      function chooseTeams() {
         $('#solo').on('click', function () {
           solo = true;
           $('#intro').fadeOut('fast');
@@ -65,7 +67,7 @@ let myApp = () => {
           solo = false;
         });
       };
-      let fetch = () => {
+      function fetch() {
         $.getJSON(api, function (data) {
           //console.log(data);
           $('#results').empty();
@@ -88,7 +90,7 @@ let myApp = () => {
           response();
         });
       };
-      let gameOver = () => {
+      function gameOver() {
         $('#new').fadeIn('fast');
         $('#fetch').prop('disabled', true);
         $('#gameOver').fadeIn('fast');
@@ -105,11 +107,11 @@ let myApp = () => {
         }
         newGame();
       };
-      let intro = () => {
+      function intro(){
         getCategories();
         chooseTeams();
       };
-      let newGame = () => {
+      function newGame() {
         $('#new').on('click', function () {
           counter = 0;
           player1Score = 0;
@@ -127,7 +129,7 @@ let myApp = () => {
           $('#gameOver').hide();
         });
       };
-      let next = () => {
+      function next() {
         $('#fetch').on('click', function () {
           $('#answer').empty();
           fetch();
@@ -138,7 +140,7 @@ let myApp = () => {
           }
         });
       };
-      let response = () => {
+      function response() {
         $('.choice').on('click', function () {
           counter += 1;
           let answer = $(this).text();
@@ -174,7 +176,7 @@ let myApp = () => {
         });
       };
       next();
-    $(document).ready(function () {
+    document.addEventListener("DOMContentLoaded", function () {
         intro();
         $('.sk-circle').fadeOut('fast');
     });
