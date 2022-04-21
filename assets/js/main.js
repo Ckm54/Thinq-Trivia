@@ -65,6 +65,29 @@ let myApp = () => {
           solo = false;
         });
       };
+      let fetch = () => {
+        $.getJSON(api, function (data) {
+          //console.log(data);
+          $('#results').empty();
+          $('#fetch').prop("disabled", true);
+          let trivia = data.results[0];
+          trivia.type === 'multiple' ? bool = false : bool = true;
+          choices = trivia.incorrect_answers;
+          choices.push(trivia.correct_answer);
+          correct = htmlEntities(trivia.correct_answer);
+          query = trivia.question;
+          $('#query').html(query);
+          //shuffle choices if question type is multiple choice
+          if (!bool) {
+            shuffle(choices);
+          }
+          $.each(choices, function (i) {
+            let choice = choices[i];
+            $('#results').append('<li><button class="choice">' + choice + '</button></li>');
+          });
+          response();
+        });
+      };
 
 }
 
