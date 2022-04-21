@@ -155,6 +155,7 @@ dropdown input:checked ~ ul {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 15px 0;
 }
 #question {
     color: #063f72;
