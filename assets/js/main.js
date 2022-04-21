@@ -17,6 +17,22 @@ let myApp = () => {
         closeCategories();
         });
     };
+    var closeCategories = () => {
+        $('li.js-category').on('click', function () {
+          chosen = $(this).text();
+          $('#toggle').prop('checked', false);
+          $('dropdown > label').html(chosen);
+          category = categories.filter(function (obj) {
+            return obj.name == chosen;
+          });
+          if (chosen === 'Random') {
+            api = 'https://opentdb.com/api.php?amount=1';
+          } else if (chosen !== 'Random') {
+            category = category[0].id;
+            api = 'https://opentdb.com/api.php?amount=1&category=' + category;
+          }
+        });
+      };
 
 }
 
