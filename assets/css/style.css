@@ -60,6 +60,10 @@ button {
     width: 100%;
     transition: all 0.25s ease;
 }
+button:hover {
+    background-color: #063f72;
+    color: #fff;
+}
 button:disabled, button:disabled:hover {
     cursor: auto;
     pointer-events: none;
