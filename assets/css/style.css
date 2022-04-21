@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
-    background-color: #063f72;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
     /* color: #063f72; */
     display: flex;
     font-family: "Quicksand", sans-serif;
@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     margin-top: 2em;
-    width: 85vw;
+    width: 65vw;
 }
 section {
     padding: 0 2em 2em 2em 2em;
@@ -23,6 +23,7 @@ section {
 h1 {
     font-weight: 900;
     text-transform: uppercase;
+    
 }
 h2 {
     margin: 0;
@@ -35,6 +36,24 @@ header {
     color: #fff;
     margin-bottom: 2em;
 }
+#introduction {
+    display: flex;
+}
+.instruction-text {
+    margin: 10px 0;
+    padding: 30px 50px;
+    text-align: justify;
+}
+.instruction-text p {
+    font-size: 20px;
+}
+.instruction-img {
+    margin-right: 50px;
+}
+#instructions {
+    padding: 10px 0;
+    font-size: 30px;
+}
 ul {
     display: flex;
     flex-flow: column;
@@ -43,12 +62,12 @@ ul {
 li {
     list-style-type: none;
 }
-button {
+button, .choice, #fetch {
     align-self: center;
     background-color: #fff;
     border: 2px solid #063f72;
     font-size: 1.25em;
-    border-radius: 200px;
+    border-radius: 5px;
     color: #063f72;
     cursor: pointer;
     font-family: "Quicksand", sans-serif;
@@ -64,6 +83,13 @@ button:hover {
     background-color: #063f72;
     color: #fff;
 }
+#results {
+    display: flex;
+    width: 100%;
+}
+/* .choice {
+    border-radius: 5px;
+} */
 button:disabled, button:disabled:hover {
     cursor: auto;
     pointer-events: none;
@@ -136,7 +162,8 @@ dropdown input:checked ~ ul {
 }
 #score {
     border-top: 2px solid;
-    padding: 0;
+    padding: 5px 0;
+    font-size: 20px;
 }
 .animate {
     -webkit-backface-visibility: hidden;
@@ -155,6 +182,14 @@ dropdown input:checked ~ ul {
 }
 #board, #gameOver, #player2-score {
     display: none;
+}
+button#fetch {
+    background-color: #05e073;
+    border: 2px solid #05e073;
+}
+button#fetch:hover {
+    background: none;
+    color: #2eb872;
 }
 
 .sk-circle {
