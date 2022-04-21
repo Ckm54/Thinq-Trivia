@@ -105,6 +105,10 @@ let myApp = () => {
         }
         newGame();
       };
+      let intro = () => {
+        getCategories();
+        chooseTeams();
+      };
 
 }
 
