@@ -5,6 +5,7 @@
 body {
     background-image: radial-gradient( circle 400px at 0.2% 1.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1));
     background-repeat: no-repeat;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     font-family: "Quicksand", sans-serif;
