@@ -3,25 +3,29 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
 html{
   margin:0;
   padding:0;
   min-height:fit-content;
-  /* overflow:hidden; */
 }
 body {
     background-image: radial-gradient( circle 400px at 0.2% 1.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1));
-    background-repeat: no-repeat;
-    height: 105vh;
+    /* background-repeat: no-repeat; */
+    height: 110vh;
     display: flex;
     font-family: "Quicksand", sans-serif;
     text-align: center;
     justify-content: center;
+    overflow-y: auto;
 }
 main {
     background-color: #fff;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     margin-top: 0em;
     width: 65vw;
 }
