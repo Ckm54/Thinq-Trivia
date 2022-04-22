@@ -3,10 +3,16 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
+html{
+  margin:0;
+  padding:0;
+  min-height:fit-content;
+  /* overflow:hidden; */
+}
 body {
     background-image: radial-gradient( circle 400px at 0.2% 1.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1));
     background-repeat: no-repeat;
-    height: 105vh;
+    height: fit-content;
     display: flex;
     font-family: "Quicksand", sans-serif;
     text-align: center;
@@ -341,5 +347,42 @@ button#fetch:hover {
     }
     40% {
       transform: scale(1);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .instruction-text {
+      padding: 10px 20px;
+    }
+    .instruction-text p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    #introduction {
+      display: block;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      height: 100%;
+      overflow-y: auto;
+    }
+    main {
+      width: 90vw;
+    }
+    .instruction-img {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    main {
+      width: fit-content;
+    }
+    .instruction-text {
+      padding: 5px 15px;
     }
   }
