@@ -12,7 +12,7 @@ html{
 body {
     background-image: radial-gradient( circle 400px at 0.2% 1.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1));
     background-repeat: no-repeat;
-    height: fit-content;
+    height: 105vh;
     display: flex;
     font-family: "Quicksand", sans-serif;
     text-align: center;
@@ -350,6 +350,12 @@ button#fetch:hover {
     }
   }
 
+  @media (max-width: 1500px) {
+    body {
+      height: 120vh;
+    }
+  }
+
   @media (max-width: 1200px) {
     .instruction-text {
       padding: 10px 20px;
@@ -360,12 +366,15 @@ button#fetch:hover {
   }
 
   @media (max-width: 1000px) {
+    body {
+      height: 140vh;
+    }
     #introduction {
       display: block;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     body {
       height: 100%;
       overflow-y: auto;
